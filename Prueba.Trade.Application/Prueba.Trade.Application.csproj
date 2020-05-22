@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\Prueba.Trade.Application.Contracts\Prueba.Trade.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Prueba.Trade.Business\Prueba.Trade.Business.csproj" />
+    <ProjectReference Include="..\Prueba.Trade.DataAccess.Contracts\Prueba.Trade.DataAccess.Contracts.csproj" />
+    <ProjectReference Include="..\Prueba.Trade.DataAccess\Prueba.Trade.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

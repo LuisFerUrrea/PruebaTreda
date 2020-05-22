@@ -11,11 +11,11 @@ namespace Prueba.Trade.DataAccess.Contracts.Repositories
 
         Task<IEnumerable<T>> GetAll();
 
-        Task<T> Get(int id);
+        Task<T> Get(string sku);
 
-        Task DeleteAsync(int id);
+        Task DeleteAsync(string sku);
 
-        Task<T> Update(int id, T element);
+        Task<T> Update(string sku, T element);
 
         Task<T> Add(T element);
 
