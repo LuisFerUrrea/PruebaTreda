@@ -12,7 +12,8 @@ namespace Prueba.Trade.CrossCutting
     public static class IoCRegister
     {
         public static IServiceCollection AddRegistration(this IServiceCollection services)
-        {           
+        {
+            AddRegisterServices(services);
             AddRegisterRepositories(services);
             return services;
         }

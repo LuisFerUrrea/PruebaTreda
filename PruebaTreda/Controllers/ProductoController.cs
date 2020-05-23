@@ -50,8 +50,7 @@ namespace PruebaTreda.Controllers
             }
         }
 
-        [HttpGet("[action]")]
-        [Produces("application/json", Type = typeof(List<ProductoModel>))]
+        [HttpGet("[action]")]        
         public async Task<IActionResult> GetAllProductosByTienda(int tiendaId)
         {
             try
